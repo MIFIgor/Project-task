@@ -1,0 +1,318 @@
+@media only screen and (max-width: 1400px) {
+  body {
+    background: url(../images/bg.png) no-repeat 80px 17px, url(../images/lamps1400.png) no-repeat top 150px right 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+
+    &__logo {
+      margin-right: 30px;
+    }
+
+    &__phone {
+      margin-left: 30px;
+    }
+  }
+
+  h2 {
+    font-size: 50px;
+
+    & span {
+      display: inline-block;
+
+      &::after {
+        bottom: 12px;
+      }
+    }
+  }
+
+  .about {
+
+    &__h2::after {
+      width: 81.7%;
+      left: 76px;
+      bottom: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    height: 4103px;
+    background: url(../images/bg992.png) no-repeat 10px 10px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin: 0 0 30px;
+    }
+
+    &__menu {
+      margin-bottom: 20px;
+    }
+
+    &__phone {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  .promo {
+    margin-bottom: 140px;
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    &__subtitle {
+      margin: 0 auto 36px;
+      line-height: 1.2;
+    }
+
+    &__form {
+      justify-content: center;
+    }
+
+    &__picture {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    &__cow {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .about {
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__picture {
+      max-width: 397px;
+      width: 100%;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__features {
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 42px;
+
+    & span::after {
+      height: 8px;
+    }
+  }
+
+  .header {
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+
+  .promo {
+    margin-bottom: 110px;
+
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+
+  .about {
+
+    &__h2::after {
+      display: none;
+    }
+
+    &__h2 span {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 283px;
+      width: 100%;
+
+      &::after {
+        bottom: 11px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    &__wrapper {
+      position: relative;
+    }
+
+    &__nav {
+      position: absolute;
+      width: 200px;
+      left: 0;
+      top: -200px;
+      background-color: var(--accent-color);
+      border-radius: 10px;
+      transition: top .3s ease-in-out;
+    }
+
+    &__nav.active {
+      top: 15px;
+      transition: top .3s ease-in-out;
+    }
+
+    &__menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding-top: 8px;
+    }
+
+    &__item {
+      margin-bottom: 8px;
+    }
+
+    &__link {
+      color: var(--btn-color);
+    }
+
+    &__burger {
+      display: flex;
+
+      & span {
+        transition: all .3s ease-in-out;
+      }
+    }
+
+    &__burger.active span:first-child {
+      position: relative;
+      transform: rotate(45deg);
+      bottom: -6px;
+    }
+
+    &__burger.active span:last-child {
+      position: relative;
+      transform: rotate(-45deg);
+      top: -6px;
+    }
+
+    &__burger.active span:nth-child(2) {
+      transform: scale(0);
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+
+    & span::after {
+      height: 6px;
+      bottom: 9px;
+    }
+  }
+
+  .promo {
+
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+
+    &__phone {
+      margin-bottom: 20px;
+      width: 80%;
+      height: 45px;
+      text-align: center;
+    }
+
+    &__btn {
+      width: 80%;
+      height: 45px;
+      text-align: center;
+    }
+  }
+
+  .about {
+
+    &__h2 span {
+      max-width: 215px;
+
+      &::after {
+        bottom: 9px;
+      }
+    }
+
+    &__subtitle {
+      width: 80%;
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 24px;
+
+    & span::after {
+      height: 5px;
+      bottom: 6px;
+    }
+  }
+
+  .form {
+
+    &__phone,
+    &__btn {
+      height: 40px;
+    }
+  }
+
+  .about {
+
+    &__h2 span {
+      max-width: 162px;
+
+      &::after {
+        bottom: 6px;
+      }
+    }
+
+
+  }
+}
